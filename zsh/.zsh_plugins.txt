@@ -1,0 +1,24 @@
+#!/bin/zsh
+
+jeffreytse/zsh-vi-mode
+
+# Completions
+mattmc3/ez-compinit
+zsh-users/zsh-completions kind:fpath path:src
+aloxaf/fzf-tab
+ 
+# History
+belak/zsh-utils path:history
+ 
+# Prompt
+romkatv/powerlevel10k
+ 
+# Utilities
+belak/zsh-utils path:utility
+romkatv/zsh-bench kind:path
+ohmyzsh/ohmyzsh path:plugins/extract
+
+# Fishy features
+zdharma-continuum/fast-syntax-highlighting  # Syntax highlighting
+zsh-users/zsh-autosuggestions               # Auto-suggestions
+zsh-users/zsh-history-substring-search      # Up/Down to search history

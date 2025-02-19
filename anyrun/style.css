@@ -1,0 +1,41 @@
+* {
+  all: unset;
+  font-size: 1.2rem;
+  transition: color;
+  transition-duration: 250ms;
+}
+
+#window,
+#match,
+#entry,
+#plugin,
+#main {
+  background: transparent;
+}
+
+box#match {
+  padding: 1rem;
+  border-radius: 16px;
+  border: solid 3px transparent;
+  margin-bottom: 1rem;
+}
+
+box#match:last-child {
+  margin: 0;
+}
+
+#match:selected>box#match {
+  border: solid 3px #ff7700;
+}
+
+#entry {
+  border-radius: 16px;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+box#main {
+  background: rgba(0, 2, 5, 0.5);
+  border: solid 3px rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+}

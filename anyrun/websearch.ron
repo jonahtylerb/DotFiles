@@ -1,0 +1,16 @@
+Config(
+  prefix: "?",
+  engines: [
+    Bing, 
+    Google,
+    Custom(
+      name: "JW.ORG", 
+      url: "jw.org/en/search/?q={}",
+    ),
+    Custom(
+      name: "AUR", 
+      url: "aur.archlinux.org/packages?K={}&submit=Go",
+    )
+  ],
+  
+)

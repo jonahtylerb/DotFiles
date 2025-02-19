@@ -1,0 +1,16 @@
+# Ignore Everything
+/*
+/*/
+
+# Except
+!hypr
+!hyprpanel
+!anyrun
+!kitty
+!zsh
+!lazygit
+!fastfetch
+!btop
+!backgrounds
+
+!.gitignore
