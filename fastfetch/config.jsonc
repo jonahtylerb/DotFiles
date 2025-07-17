@@ -9,7 +9,7 @@
     "source": "arch_small", // search for logos: fastfetch --list-logos or --print-logos
     "padding": {
       "top": 1
-    },
+    }
   },
   "display": {
     "separator": "  "
@@ -18,38 +18,61 @@
     "break",
     "title",
     {
-      "type": "os",
-      "key": "os    ",
-      "keyColor": "33", // = color3
+      "type": "kernel",
+      "key": "KERNEL",
+      "keyColor": "blue"
     },
     {
-      "type": "kernel",
-      "key": "kernel",
-      "keyColor": "33",
+      "type": "os",
+      "format": "{2}",
+      "key": "OS    ",
+      "keyColor": "blue"
     },
     {
       "type": "host",
-      "format": "{5} {1}",
-      "key": "host  ",
-      "keyColor": "33",
+      "format": "{5}",
+      "key": "HOST  ",
+      "keyColor": "blue"
     },
     {
       "type": "packages",
-      "format": "{} (pacman)",
-      "key": "pkgs  ",
-      "keyColor": "33",
+      "format": "{} (Pacman)",
+      "key": "PKGS  ",
+      "keyColor": "blue"
     },
     {
       "type": "uptime",
       "format": "{2}h {3}m",
-      "key": "uptime",
-      "keyColor": "33",
+      "key": "UPTIME",
+      "keyColor": "blue"
+    },
+    {
+      "type": "wifi",
+      "key": "WIFI",
+      "keyColor": "blue"
+    },
+    "break",
+    {
+      "type": "wm",
+      "key": "WM",
+      "keyColor": "magenta"
+    },
+    "break",
+    {
+      "type": "cpu",
+      "key": "CPU",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "gpu",
+      "key": "GPU",
+      "keyColor": "yellow"
     },
     {
       "type": "memory",
-      "key": "memory",
-      "keyColor": "33",
+      "key": "RAM",
+      "keyColor": "yellow"
     },
-    "break",
+    "break"
   ]
 }

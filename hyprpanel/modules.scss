@@ -1,0 +1,8 @@
+/* ##################################
+ * #  Custom Clipboard Module Styling  #
+ * ################################## */
+@include styleModule('cmodule-clipboard',
+  ('text-color': #FFF,
+    'label-background': #00000000,
+    'border-color': #00000000,
+  ));

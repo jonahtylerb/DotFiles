@@ -188,9 +188,9 @@
     }
   ],
   "bar.customModules.updates.pollingInterval": 1440000,
-  "scalingPriority": "hyprland",
-  "theme.font.size": "0.9rem",
-  "theme.font.weight": 500,
+  "scalingPriority": "both",
+  "theme.font.size": "0.8rem",
+  "theme.font.weight": 400,
   "terminal": "kitty",
   "menus.transition": "crossfade",
   "menus.transitionTime": 100,
@@ -198,17 +198,19 @@
     "2": {
       "left": [
         "dashboard",
-        "workspaces"
+        "worldclock"
       ],
       "middle": [
         "clock",
         "media"
       ],
       "right": [
+        "custom/clipboard",
         "updates",
         "volume",
         "network",
         "bluetooth",
+        "hyprsunset",
         "systray",
         "notifications",
         "power"
@@ -216,25 +218,23 @@
     },
     "*": {
       "left": [
-        "dashboard",
-        "workspaces"
+        "dashboard"
       ],
       "middle": [],
       "right": [
         "clock",
-        "volume",
         "notifications"
       ]
     }
   },
-  "theme.bar.floating": true,
+  "theme.bar.floating": false,
   "bar.autoHide": "fullscreen",
   "theme.bar.location": "top",
-  "theme.bar.buttons.enableBorders": true,
+  "theme.bar.buttons.enableBorders": false,
   "theme.bar.border.location": "none",
   "theme.bar.border.width": "0",
   "theme.bar.border_radius": "0",
-  "theme.bar.outer_spacing": "0.3em",
+  "theme.bar.outer_spacing": "0",
   "theme.bar.buttons.radius": "0.5em",
   "theme.bar.dropdownGap": "3.4em",
   "theme.bar.margin_top": "0.25em",
@@ -243,8 +243,8 @@
   "theme.bar.buttons.workspaces.enableBorder": false,
   "bar.workspaces.show_icons": false,
   "bar.workspaces.show_numbered": false,
-  "bar.workspaces.showApplicationIcons": true,
-  "bar.workspaces.showWsIcons": true,
+  "bar.workspaces.showApplicationIcons": false,
+  "bar.workspaces.showWsIcons": false,
   "bar.workspaces.numbered_active_indicator": "highlight",
   "theme.bar.buttons.workspaces.smartHighlight": true,
   "theme.bar.buttons.workspaces.numbered_active_highlight_padding": "0.3em",
@@ -262,13 +262,13 @@
   "bar.media.show_active_only": true,
   "bar.notifications.show_total": true,
   "wallpaper.pywal": true,
-  "wallpaper.image": "~/.config/backgrounds/birds.png",
-  "wallpaper.enable": true,
+  "wallpaper.image": "/home/jbrupbacher/.config/backgrounds/birds.png",
+  "wallpaper.enable": false,
   "theme.matugen": true,
   "theme.matugen_settings.mode": "dark",
   "theme.matugen_settings.scheme_type": "tonal-spot",
   "theme.matugen_settings.variation": "standard_1",
-  "theme.matugen_settings.contrast": 0.7,
+  "theme.matugen_settings.contrast": 1,
   "theme.font.name": "JetBrainsMono Nerd Font",
   "theme.font.label": "JetBrainsMono Nerd Font Ultra-Light",
   "theme.bar.buttons.style": "default",
@@ -286,8 +286,8 @@
   "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Brave",
   "menus.dashboard.shortcuts.left.shortcut3.command": "kitty",
   "menus.dashboard.shortcuts.left.shortcut3.tooltip": "Kitty",
-  "menus.dashboard.shortcuts.left.shortcut4.command": "anyrun",
-  "menus.dashboard.directories.left.directory3.label": "󰚝 Codign",
+  "menus.dashboard.shortcuts.left.shortcut4.command": "walker",
+  "menus.dashboard.directories.left.directory3.label": "󰚝 Coding",
   "menus.dashboard.directories.left.directory3.command": "zsh -c \"xdg-open $HOME/Coding/\"",
   "menus.dashboard.directories.left.directory2.command": "zsh -c \"xdg-open $HOME/Videos/\"",
   "menus.dashboard.directories.left.directory1.command": "zsh -c \"xdg-open $HOME/Downloads/\"",
@@ -297,7 +297,7 @@
   "menus.dashboard.shortcuts.left.shortcut3.icon": "󰄛",
   "menus.dashboard.shortcuts.left.shortcut1.icon": "󰖟",
   "bar.customModules.updates.autoHide": true,
-  "bar.customModules.updates.leftClick": "kitty zsh -c \"paru -Syu --noconfirm\"",
+  "bar.customModules.updates.leftClick": "kitty zsh -c \"checkupdates && paru -Syu --noconfirm\"",
   "bar.workspaces.reverse_scroll": true,
   "menus.media.displayTime": false,
   "menus.media.hideAuthor": false,
@@ -305,10 +305,10 @@
   "theme.osd.margins": "7px 7px 7px 7px",
   "bar.customModules.hypridle.onIcon": "󰒳",
   "bar.customModules.hypridle.offIcon": "󰒲",
-  "theme.bar.shadow": "0px 1px 3px 1px #16161e",
-  "theme.bar.shadowMargins": "0",
+  "theme.bar.shadow": "0 2px 0 0 #00000044",
+  "theme.bar.shadowMargins": "0 0 2px 0",
   "bar.customModules.updates.padZero": false,
-  "bar.customModules.updates.rightClick": "kitty zsh -c \"checkupdates\" && read -s -k $'?Press any key to continue.\\n' && exit",
+  "bar.customModules.updates.rightClick": "kitty zsh -c \"checkupdates && read -s -k $'?Press any key to continue.\\n' && exit\"",
   "theme.bar.buttons.dashboard.background": "#242438",
   "bar.customModules.submap.showSubmapName": true,
   "bar.customModules.power.rightClick": "shutdown now",
@@ -319,5 +319,31 @@
   "bar.customModules.cpuTemp.unit": "imperial",
   "menus.clock.weather.key": "d16e9ad1f5884d3595f185740252802",
   "menus.clock.weather.location": "10987",
-  "menus.clock.weather.interval": 900000
+  "menus.clock.weather.interval": 900000,
+  "theme.bar.scaling": 100,
+  "menus.power.showLabel": true,
+  "theme.bar.buttons.background_hover_opacity": 70,
+  "theme.bar.menus.border.size": "0",
+  "menus.clock.time.military": false,
+  "theme.bar.buttons.borderSize": "0.12em",
+  "bar.customModules.hyprsunset.label": false,
+  "bar.customModules.updates.extendedTooltip": true,
+  "menus.power.sleep": "hyprlock",
+  "bar.customModules.storage.paths": [
+    "/"
+  ],
+  "bar.workspaces.workspaceMask": false,
+  "bar.workspaces.showAllActive": true,
+  "bar.workspaces.monitorSpecific": true,
+  "bar.workspaces.applicationIconEmptyWorkspace": "",
+  "bar.workspaces.applicationIconOncePerWorkspace": false,
+  "bar.customModules.worldclock.tz": [
+    "Asia/Ho_Chi_Minh"
+  ],
+  "bar.customModules.worldclock.format": "HCM %I:%M %p",
+  "bar.customModules.worldclock.formatDiffDate": "%I:%M %p",
+  "bar.customModules.worldclock.leftClick": "",
+  "bar.customModules.worldclock.icon": "j",
+  "bar.customModules.worldclock.showIcon": false,
+  "theme.bar.buttons.padding_x": "0.6rem"
 }

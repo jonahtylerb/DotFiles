@@ -1,0 +1,13 @@
+{
+  "custom/clipboard": {
+    "label": "{}",
+    "truncationSize": 50,
+    "execute": "cliphist list | head -n 1 | cliphist decode | head -n 1",
+    "interval": 1000,
+    "hideOnEmpty": true,
+    "actions": {
+      "onLeftClick": "walker -m clipboard",
+      "onRightClick": "cliphist list | head -n 1 | cliphist delete"
+    }
+  }
+}

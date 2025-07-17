@@ -4,13 +4,21 @@
 alias ls='exa -l --icons=always'
 alias g=git
 alias cd=z
-alias n='nvim '
-alias vi=nvim
-alias vim=nvim
+alias n='neovide --fork '
+alias vi=n
+alias vim=n
 alias c=clear
-alias q=exit
+alias e=exit
 alias e=exit
 alias lg=lazygit
+alias y=yazi
+
+v() {
+  nohup ~/.config/zsh/.zshrc.d/neovide.sh "$1" >/dev/null 2>&1 &!
+  exit
+}
+
+alias tt='taskwarrior-tui'
 
 # more ways to ls
 alias l=ls
@@ -35,5 +43,5 @@ alias ff='find . -type f -name'
 alias zbench='for i in {1..10}; do /usr/bin/time zsh -lic exit; done'
 
 # be kind to your terminal
-alias please=sudo
-alias thanks='clear && echo "You are very welcome :)"'
+alias pls=sudo
+alias thx='clear && echo "You are very welcome :)"'
