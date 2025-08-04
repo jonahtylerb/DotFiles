@@ -3,20 +3,19 @@ plugins = ["scratchpads", "magnify"]
 
 [scratchpads.term]
 animation = "fromBottom"
-command = "kitty --class pop-kitty"
-class = "pop-kitty"
+command = "kitty --class kitty-float"
+class = "kitty-float"
 size = "75% 60%"
 max_size = "1920px 100%"
-margin = 50
 unfocus = "hide"
+lazy = true
 
 [scratchpads.calc]
 animation = "fromRight"
 command = "gnome-calculator"
 class = "org.gnome.Calculator"
-size = "20% 60%"
-max_size = "100% 100%"
+size = "400px 60%"
+max_size = "50% 100%"
 unfocus = "hide"
-margin = 50
 lazy = true
 close_on_hide = true
